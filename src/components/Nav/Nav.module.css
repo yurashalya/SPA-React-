@@ -1,12 +1,12 @@
 .nav {
-    grid-area: n;
-    background-image: linear-gradient(to right top, #2980b9, #3795ca, #47aadb, #59bfea, #6dd5fa);
+  grid-area: n;
+  background-image: linear-gradient(to right top, #2980b9, #3795ca, #47aadb, #59bfea, #6dd5fa);
+  padding: 15px;
 }
 
 
 .navItem {
   margin-top: 15px;
-  padding-left: 15px;
 }
 
 .navItem a {
@@ -14,4 +14,8 @@
   text-decoration: none;
   font-size: 17px;
   font-weight: 500;
+}
+
+.navItem a.activeLink {
+  color: rgb(214, 228, 23);
 }
