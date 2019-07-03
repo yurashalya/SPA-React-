@@ -10,6 +10,7 @@
   grid-template-columns: 2fr 10fr;
 }
 
-
-
-
+.app-wrapper-content {
+  grid-area: c;
+  background-image: linear-gradient(to right top, #00f260, #00deb5, #00c3f4, #00a0ff, #0575e6);
+}
