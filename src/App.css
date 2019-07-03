@@ -1,5 +1,5 @@
 .app-wrapper {
-  width: 1300px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -10,34 +10,6 @@
   grid-template-columns: 2fr 10fr;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  
-  grid-area: h;
-  background-image: linear-gradient(to right top, #ff00cc, #cd27c8, #9a33be, #6836ae, #333399);
-}
 
-.header img {
-  width: 50px;
-  height: auto;
-  display: block;
-  margin-left: 15px;
-}
-
-.nav {
-  grid-area: n;
-  background-image: linear-gradient(to right top, #2980b9, #3795ca, #47aadb, #59bfea, #6dd5fa);
-}
-
-.content {
-  grid-area: c;
-  background-image: linear-gradient(to right top, #00f260, #00deb5, #00c3f4, #00a0ff, #0575e6);
-}
-
-.content img { 
-  width: 100%;
-  height: auto;
-}
 
 
