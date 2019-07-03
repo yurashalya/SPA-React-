@@ -1,0 +1,18 @@
+.item {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.item img  {
+    max-width: 40px;
+    height: auto;
+}
+
+.item h5 {
+    margin-left: 10px;
+}
