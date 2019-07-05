@@ -2,3 +2,28 @@
     grid-area: c;
     background-image: linear-gradient(to right top, #00f260, #00deb5, #00c3f4, #00a0ff, #0575e6);
 }
+
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialog {
+
+}
+
+.dialogsItems {
+    padding: 15px;
+}
+
+.dialogsItems .active {
+    color: gold;
+}
+
+.messages {
+    padding: 15px;
+}
+
+.message {
+
+}
