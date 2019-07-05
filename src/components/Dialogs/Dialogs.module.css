@@ -8,9 +8,6 @@
     grid-template-columns: 2fr 10fr;
 }
 
-.dialog {
-
-}
 
 .dialogsItems {
     padding: 15px;
@@ -24,6 +21,3 @@
     padding: 15px;
 }
 
-.message {
-
-}
