@@ -1,4 +1,7 @@
-import {rerenderEntireThree} from './../render';
+// import {rerenderEntireThree} from './../render';
+let rerenderEntireThree = () => {
+    console.log('State change ');
+}
 
 let state = {
     profilePage: {
@@ -7,6 +10,7 @@ let state = {
             { id: 2, message: 'It\'s my first post', likesCount: 15 },
             { id: 3, message: 'Hello, my friend', likesCount: 10 },
         ],
+        newPostText: 'react lesson'
     },  
     dialogsPage: {
         messages: [
@@ -26,15 +30,26 @@ let state = {
     }
 };
 
-export let addPost = (postMessage) => {
+export const addPost = () => {
     let newPost = {
         id: 4,
-        message: postMessage,
+        message: state.profilePage.newPostText,
         likesCount: 0
     };
 
     state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
     rerenderEntireThree(state);
 }
+
+
+export const updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;   
+    rerenderEntireThree(state);
+}
+
+export const subscribe = (observer) => {
+    rerenderEntireThree = observer;
+} 
 
 export default state;
