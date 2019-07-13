@@ -9,7 +9,6 @@ import Dialogs from './components/Dialogs/Dialogs';
 
 
 const App = (props) => {
-
   return (
       <div className="app-wrapper"> 
           <Header/>
