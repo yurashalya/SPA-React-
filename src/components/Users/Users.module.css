@@ -4,4 +4,25 @@
 
 .wrappUsers {
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.contentOne {
+    width: 10%;
+}
+
+.contentTwo {
+    display: flex;
+    width: 90%;
+}
+
+.contentTwo textarea {
+    width: 100%;
+}
+
+.selectedPage {
+    font-weight: bold;
+    cursor: pointer;
 }
