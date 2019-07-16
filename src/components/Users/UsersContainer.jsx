@@ -9,7 +9,7 @@ let mapStateToProps = state => {
   };
 };
 
-let mapDispatchProps = dispatch => {
+let mapDispatchProps = (dispatch) => {
   return {
     follow: userId => {
       dispatch(followAC(userId));
@@ -23,7 +23,4 @@ let mapDispatchProps = dispatch => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchProps
-)(Users);
+export default connect( mapStateToProps, mapDispatchProps) (Users);

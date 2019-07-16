@@ -3,45 +3,7 @@ const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS = 'SET_USERS';
 
 let initialState = {
-  users: [
-    {
-      id: 1,
-      photoUlr:
-        "https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png",
-      follower: false,
-      fullName: "Roma",
-      status: "React",
-      location: { city: "Kiev", country: "UA" }
-    },
-    {
-      id: 2,
-      photoUlr:
-        "https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png",
-      follower: true,
-      fullName: "Sasha",
-      status: "Vue",
-      location: { city: "Kharkiv", country: "UA" }
-    },
-    {
-      id: 3,
-      photoUlr:
-        "https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png",
-      follower: true,
-      fullName: "Yura",
-      status: "Angular",
-      location: { city: "Lviv", country: "UA" }
-    },
-    {
-      id: 4,
-      photoUlr:
-        "https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png",
-      follower: false,
-      fullName: "Dima",
-      status: "jQuery ",
-      location: { city: "Dnipro", country: "UA" }
-    }
-  ],
-  newPostText: "Learn React"
+  users: []
 };
 
 const userReducer = (state = initialState, action) => {
