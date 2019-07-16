@@ -1,0 +1,7 @@
+.usersImg {
+    max-width: 65px;
+}
+
+.wrappUsers {
+    display: flex;
+}
