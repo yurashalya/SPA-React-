@@ -5,7 +5,6 @@ import Post from './Post/Post';
 
 
 const MyPosts = (props) => {
-
     let postsElements = 
         props.posts.map( p => <Post message={p.message} likesCount={p.likesCount} id={p.id} /> );
 
@@ -19,7 +18,6 @@ const MyPosts = (props) => {
         let text = newPostElements.current.value;
         props.updateNewPostText(text);
     }
-
     return (
         <div className={classes.postBlock}> 
             <h3>My Post</h3> 
@@ -35,7 +33,6 @@ const MyPosts = (props) => {
                {postsElements}
             </div>
         </div>
-
     )
 }
 
