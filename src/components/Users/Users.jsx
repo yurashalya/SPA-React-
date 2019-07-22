@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import classes from './Users.module.css';
 import userPhoto from './../../assets/img/usersImg.png';
 
@@ -25,7 +26,9 @@ let Users = (props) => {
                 <div className={classes.wrappUsers}>
                     <div className={classes.contentOne}>
                         <div>
-                            <img className={classes.usersImg} src={u.photos.small != null ? u.photos.small : userPhoto } />
+                            <NavLink to={'/profile' + u.id}>
+                                <img className={classes.usersImg} src={u.photos.small != null ? u.photos.small : userPhoto } />
+                            </NavLink>
                         </div>
                         <div>
                             {u.follower
