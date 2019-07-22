@@ -26,7 +26,7 @@ let Users = (props) => {
                 <div className={classes.wrappUsers}>
                     <div className={classes.contentOne}>
                         <div>
-                            <NavLink to={'/profile' + u.id}>
+                            <NavLink to={'/profile/' + u.id}>
                                 <img className={classes.usersImg} src={u.photos.small != null ? u.photos.small : userPhoto } />
                             </NavLink>
                         </div>
