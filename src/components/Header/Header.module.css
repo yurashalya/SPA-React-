@@ -1,7 +1,7 @@
 .header {
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
     grid-area: h;
     background-image: linear-gradient(to right top, #ff00cc, #cd27c8, #9a33be, #6836ae, #333399);
 }
@@ -11,4 +11,14 @@
     height: auto;
     display: block;
     margin-left: 15px;
+}
+
+.loginBlock {
+    margin-right: 15px;
+}
+
+.loginBlock  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
 }
